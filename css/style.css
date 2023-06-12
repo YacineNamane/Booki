@@ -16,6 +16,7 @@
 body {
     display: flex;
     justify-content: center;
+   
 }
 
 .main-container {
@@ -125,8 +126,10 @@ header{
 display: flex;
 flex-direction: row;
 justify-content: space-between;
-align-items: center;
-height: 112px;
+
+
+width:100%;
+height: 79px;
 
 }
 
@@ -134,8 +137,10 @@ height: 112px;
 
 .logo img {
 
-    width: 61.09px;
-    height: 19px;
+    width: 80px;
+    height: 23px;
+    border-radius: 0px;
+    padding-top: 20px;
 }
 .nav ul{
     display :flex ;
@@ -144,11 +149,11 @@ ul{
    
     display: flex;
     list-style-type: none;
-    padding: unset;
+    padding: 0px;
 }
 nav li {
     
-    padding: 35px 33.5px;
+    padding: 10px 10px;
     font-family: 'Raleway';
    
 }
@@ -157,15 +162,21 @@ nav li {
 nav li:hover {
     border-top: solid 2px #0065FC;
     cursor: pointer;
-    padding: 42.61px 33.61;
+   padding: 10px 10px;
+    
 }
 nav li:hover a {
     color: #0065FC;
+   
 }
 
 .menu a {
     text-decoration: none;
     font-weight: 500;
+    width: 328.6px;
+height: 35px;
+padding: 0px 25px;
+gap: 68px;
 }
 
   a {
@@ -185,7 +196,7 @@ nav li:hover a {
     height: 163px;
     width: 1340px;
     
-    margin : 15px;
+   
     gap: 20px;
     
     
@@ -313,6 +324,10 @@ line-height: 26px;
 }
 
 /* FILTRES */
+.filtrebloc{
+    display: flex;
+    gap:35px;
+}
 
 .filtres{
     
@@ -324,6 +339,9 @@ line-height: 26px;
   
    gap: 30px;
    
+}
+.ftitle{
+    padding-top: 15px;
 }
 .filtre{
    
@@ -360,7 +378,8 @@ h3{
     font-weight: 700;
     font-size: 18px;
     line-height: 21px;
-   padding-top: 20px;
+   
+    
    
 }
 
@@ -413,11 +432,60 @@ h3{
         width: 250.33px;
         height: 207.25px;
         padding: 5px 5px 5px 5px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        cursor: pointer;
+        
+
+        
+    
         
     }
     
 
- 
+    /*Activités */
+    .act{
+        display: flex;
+        align-items: center;
+        gap: 35px;
+        filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+        padding-top: 30px;
+        padding-bottom: 45px;
+        border-radius: 20px;
+        width: 1340px;
+        height: 559.02px;
+    }
+    
+    .actb{
+        width: 297.5px;
+        height: 439px;
+        filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+        border-radius: 20px;
+        cursor: pointer;
+    }
+
+    .imga{
+        width: 297.5px;
+         height: 380px;
+         filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+         align-self: stretch;
+    }
+   
+    .Tba{
+        filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+        background: #FFFFFF;
+       border-radius: 0px 0px 20px 20px;
+       padding: 20px;
+       line-height: 19px;
+    }
+    .Acts{
+        padding-top: 45px;
+        padding-bottom: 35px;
+    }
+    .neutral-star{
+        color: #F2F2F2;
+    }
 
 
 
@@ -462,9 +530,105 @@ h3{
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+
+    /* mes queries pour tablette */
+
+    .act{
+        display: flex;
+        flex-direction: row;
+        width: 864px;
+        height: 270px;
+        
+        gap: 35px;
+    }
+    .actb{
+        width: 193.5px;
+        height: 270px;
+    }
+    .imga{
+        width: 193.5px;
+        height: 200px;
+    }
+    .Tba{
+        width: 155.5px;
+        height: 19px;
+    }
+    h3{
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 700;
+
+    }
+    .filtres{
+        display: flex;
+        flex-direction: column;
+    }
+    .contenu-footer{
+        width: 924px;
+        height: 163px;
+    }
+
+ 
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
     /* ... */
+       /* Mes queries pour mobile */
+
+       header{
+        display: flex;
+        flex-direction:column;
+        justify-content: flex-start;
+       padding-bottom: 50px;
+       
+        }
+        ul{
+            display:flex;
+            justify-content: center;
+           align-items: center;
+           flex-direction: row;
+        }
+          
+        li{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-start;
+            width: 375px;
+            height: 19px;
+        }
+        nav li:hover {
+            border-bottom: solid 2px #0065FC;
+            border-top:#FFFFFF;
+            padding-bottom: 15px;
+           
+        }
+        .logo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 25px;
+        }
+        h2{
+            padding-bottom: 5px;
+        }
+        .filtrebloc{
+            display: flex;
+            align-items: flex-start;
+           flex-wrap: nowrap;
+            padding: 0px;
+            gap: 30px;
+            width: 335px;
+            height: 161px;
+        }
+        .filtre{
+           
+            
+        }
+        
+           
+        
+        
+
 }
