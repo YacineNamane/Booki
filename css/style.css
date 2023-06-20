@@ -248,13 +248,13 @@ h2 {
 .searchborder {
     font-family: 'Raleway';
     border : none;
-    border-width: 100%;
+    border-width: 10px;
     color: #000000;
 }
 
 .search {
     padding: 24px 14px 24px 14px;
-    width: 195x;
+    width: 195px;
     height: 49px;
     border:none;
     color: black;
@@ -539,7 +539,7 @@ img {
         flex-direction: row;
         justify-content: center;
         align-items: flex-start;
-        width: 375px;
+        width: 50%;
         height: 19px;
     }
     nav li:hover {
@@ -554,58 +554,88 @@ img {
         align-items: center;
         padding-bottom: 25px;
     }
+    .searchborder{
+        width: 60%;
+    }
+    .button{
+        width: 35%;
+    }
+    .iconemap{
+        width: 5%;
+    }
+    .search{   
+        width: 100%;
+    }
+    .Pannel-recherche{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 200px;
+        width: 99%;
+    }
     h2 {
         padding-bottom: 20px;
+    }
+    .infosection{
+        padding-top: 20px;
     }
     .filtresesction {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        height: 250px;
+        width: 99%;
+    }
+    .searchsection{
+        display: flex;
+        align-self: stretch;
+        width: 97%;
     }
     .filtrebloc {
         display: flex;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
+        justify-content: center;
         padding: 0px;
-        gap: 30px;
-        width: 335px;
-        height: 50px;
+        gap: 20px;
+        height: 250px;
     }
     .filtre{
         display: flex;
         flex-wrap: nowrap;
+        height: 10%;
+        width: 35%;
     }
-
+    .textfiltre{
+        width: 75%;
+    }
    .Activitys{
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        width: 375px;
-        height: 965.02px;
-     
- 
    }
    .ActivitéSection{
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         gap: 30px;
-        padding-left: 40px;
+        padding-left: 10px;
+        height: 900px;
+        width: 100%;
    }
    .activity-card{
-        width: 350px;
+        width: 99%;
         height: 200px;
    }
     .image-activity{
-        width: 335px;
+        width: 97%;
         height: 163px;
     }
     .activity-txt{
-        width: 296px;
+        width: 87%;
         height: 15px;
     }
-    footer{
-        padding-top: 30px;
-        padding-left: 35px;
+    .hebergements{
+        width: 100%;
     }
     .hotels{
         display: flex;
@@ -613,63 +643,50 @@ img {
         align-items: flex-start;
         padding: 20px;
         gap: 15px;
-        width: 375px;
+        width: 90%;
         height: 1435.5px;
     }
     .HotelCard{
-        width: 335px;
+        width: 90%;
         height: 207.25px;
     }
     img{
-        width: 335px;
+        width: 99%;
         height: 124px;
-
     }
     .contenu-footer{
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        width: 375px;
+        width: 100%;
         height: 461px;
-        gap: 35px;
-       
+        gap: 35px; 
     }
-       .footer-bloc{
+    .footer-bloc{
         width: 375px;
         height: 160px;
-
+    }
+    footer{
+        padding-top: 30px;
+        padding-left: 35px;
+    }
+    .hebergements-and-populaires{
+        border-radius: 0px 0px 0px 0px;
+    }
+    .populaires-cards .card {
+        margin-top: 0px;
+        width: 90%;
     }
     .populaires-cards{
         display: flex;
         flex-direction: column;
-        padding-left: 30px;
-        margin-top: 0px;
-        height: 569px;
-        width: 1000px; 
-    }
-    .card{
-        display: flex;
-        width: 335px;
-        height: 137px;
-        margin-top: 0px;   
-    }
-    .populaires-cards img{
-        width: 100px;
-    }
-    .card-content{
-        width: 300px
-
-    }
-    .populaires{
-        padding-left: 40px;
-        
+        gap: 10px;
     }
     .hebergements-and-populaires{
         display: flex;
         flex-direction: column-reverse;
         gap :30px;
     }
-
     
     }
     
