@@ -1,7 +1,6 @@
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
-    box-shadow: inset 0px 0px 1px red;
 }
 
 :root {
@@ -235,6 +234,10 @@ h2 {
     line-height: 26px;
 }
 
+.Rechercher-mobile{
+    display: none;
+}
+
 .searchsection {
     display: flex;
     justify-content: flex-start;
@@ -465,7 +468,10 @@ h3 {
     }
 
     /* mes queries pour tablette */
-
+    .filtresesction{
+        display: flex;
+        flex-direction: column;
+    }
     .ActivitéSection{
         display: flex;
         flex-direction: row;
@@ -545,11 +551,19 @@ h3 {
     .searchborder{
         width: 60%;
     }
-    .button{
-        width: 35%;
-    }
     .iconemap{
         width: 5%;
+    }
+    .Rechercher-mobile{
+        display: block;
+        border-radius: 10px 10px 10px 10px;
+        width: 13%;
+        color: white;
+        background: #0065FC;
+        border: 1px solid #0065FC;
+    }
+    .Rechercher{
+        display: none;
     }
     .search{   
         width: 100%;
@@ -567,6 +581,9 @@ h3 {
     .infosection{
         padding-top: 20px;
     }
+    .fitretitle{
+        padding-bottom: 15px;
+    }
     .filtresesction {
         display: flex;
         flex-direction: column;
@@ -575,23 +592,17 @@ h3 {
     }
     .searchsection{
         display: flex;
-        align-self: stretch;
-        
+        align-self: stretch; 
     }
     .filtrebloc {
         display: flex;
         flex-wrap: wrap;
-        
         padding: 0px;
-        gap: 10px;
-       
+        gap: 10px; 
     }
     .filtre{
         display: flex;
         flex-wrap: wrap;   
-    }
-    .textfiltre{
-        
     }
    .Activitys{
         display: flex;
@@ -603,20 +614,21 @@ h3 {
         flex-direction: column;
         align-items: flex-start;
         gap: 30px;
-        padding-left: 10px;
         height: 900px;
         width: 100%;
    }
    .activity-card{
         width: 100%;
         height: 200px;
+        padding-left: 17px;
    }
     .image-activity{
-        width: 100%;
+        width: 85%;
         height: 75%;
+        border-radius: 20px 20px 0px 0px;
     }
     .activity-txt{
-        width: 100%;
+        width: 85%;
         height: 25%;
     }
     .hebergements{
@@ -629,11 +641,9 @@ h3 {
         padding: 20px;
         gap: 15px;
         width: 90%;
-        height: 1435.5px;
     }
     .HotelCard{
         width: 90%;
-        height: 207.25px;
     }
     img{
         width: 99%;
@@ -674,7 +684,8 @@ h3 {
     }
     .main-container{
         gap: 20px;
-    }    
+    }
+    
     }
     
     
